@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f5f9">
+  <meta name="description" content="ROTATION V3 美术与交互交接图集：实机界面、入口、按钮、状态与动效说明。">
+  <title>ROTATION V3 · 界面与交互</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+<!-- THESIS: A V3 screenshot contact sheet for art and interaction handoff, adapted from the user-selected V2 gallery.
+OWN-WORLD: Cool white canvas, blue controls, soft 16px image frames, understated moving glass navigation.
+STORY: Filter a game flow, inspect its screen, read entry/control/state/motion notes.
+FIRST VIEWPORT: Compact title above one category rail, a short flow description and four large portrait screenshots.
+FORM: Precisely referenced contact sheet; inherited V2 composition, no concept seed required.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+  <a class="skip-link" href="#screens">跳到截图</a>
+  <header class="page-header">
+    <div><h1>ROTATION V3 <span>界面与交互</span></h1><p>美术与交互交接图集</p></div>
+    <a href="https://github.com/Silvera0218/Rotatev3-UI-Gallery" target="_blank" rel="noreferrer">查看仓库</a>
+  </header>
+  <div class="filter-shell"><div class="filter-scroll"><div class="filter-stage"><canvas id="glass-nav" aria-hidden="true" hidden></canvas><nav id="filters" aria-label="界面分类"></nav></div></div></div>
+  <section class="section-intro" aria-labelledby="group-title"><h2 id="group-title">全部界面</h2><p id="group-summary">从首页、局内操作到通关补给，查看 V3 当前界面与交互。</p></section>
+  <div class="gallery-meta"><p id="count" role="status" aria-live="polite">正在载入截图…</p><p>实机采集 · <time datetime="2026-10-08">2026.10.08</time></p></div>
+  <main id="screens" tabindex="-1" aria-label="界面截图"></main>
+  <p id="load-error" hidden role="alert">图集未能载入，请刷新页面重试。</p>
+  <footer class="page-footer"><p>ROTATION V3</p><a href="https://silvera0218.github.io/Rotatev2-UI-Gallery/" target="_blank" rel="noreferrer">查看 V2 图集</a></footer>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <header class="viewer-header"><div><h2 id="viewer-title"></h2></div><button id="close-viewer" class="icon-button" type="button" aria-label="关闭截图"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-x"/></svg></button></header>
+    <div class="viewer-body"><figure><img id="viewer-image" src="./screens/home-new.png" width="390" height="844" alt=""><figcaption><span id="viewer-position"></span><a id="original-image" href="#" target="_blank" rel="noreferrer">查看原图</a></figcaption></figure><div class="viewer-notes"><p id="viewer-description" class="viewer-description"></p><section><h3>入口</h3><p id="viewer-entry"></p></section><section><h3>操作</h3><ul id="viewer-actions"></ul></section><section><h3>状态</h3><p id="viewer-state"></p></section><section><h3>动效</h3><p id="viewer-motion"></p></section></div></div>
+    <footer class="viewer-footer"><button id="previous-screen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-left"/></svg>上一张</button><button id="next-screen" type="button">下一张<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-right"/></svg></button></footer>
+  </dialog>
+  <svg class="icon-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <!-- Tabler Icons, MIT: x, chevron-left, chevron-right. -->
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="icon-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="icon-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  </defs></svg>
+</body>
+</html>
+
+

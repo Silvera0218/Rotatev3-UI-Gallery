@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "home-new",
+    "title": "首页 · 新游戏",
+    "group": "home",
+    "entry": "打开 V3",
+    "description": "首页提供开始游戏、图鉴和设置入口。",
+    "actions": [
+      "开始游戏",
+      "图鉴",
+      "设置"
+    ],
+    "state": "无存档，显示“开始游戏”",
+    "image": "screens/home-new.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "主页",
+    "motion": "背景流光与像素微粒循环。开始游戏后播放入场过渡。",
+    "buttons": [
+      {
+        "label": "开始游戏",
+        "effect": "新开一局，进入棋盘"
+      },
+      {
+        "label": "图鉴",
+        "effect": "打开能力图鉴，查看物品效果"
+      },
+      {
+        "label": "设置",
+        "effect": "打开音量、布局、配色和动效设置"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "codex-home",
+    "title": "局外图鉴",
+    "group": "guide",
+    "entry": "首页 → 图鉴 → 金币方块",
+    "description": "落地后保留金币标记。消除时，每个金币格获得等同于本批消除格数的金币；多个金币格分别触发。铲除或重排消耗不发金币。",
+    "actions": [
+      "道具 / 特殊方块图标",
+      "重播",
+      "X"
+    ],
+    "state": "选中金币方块",
+    "image": "screens/codex-home.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "图鉴与规则",
+    "motion": "棋盘示意循环演示使用前、触发和使用后；重播从头开始。",
+    "buttons": [
+      {
+        "label": "道具 / 特殊方块图标",
+        "effect": "选中该物品，显示效果说明并从头播放演示"
+      },
+      {
+        "label": "重播",
+        "effect": "从头播放当前物品的演示"
+      },
+      {
+        "label": "X",
+        "effect": "关闭图鉴，返回首页"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "settings-layout",
+    "title": "设置 · 音量与布局",
+    "group": "home",
+    "entry": "首页 → 设置",
+    "description": "顶部调节音量和静音；布局页选择操作按钮的位置。",
+    "actions": [
+      "音量滑块",
+      "声音图标",
+      "布局选项",
+      "配色 / 动效",
+      "X"
+    ],
+    "state": "音量 100%，布局设置",
+    "image": "screens/settings-layout.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "主页",
+    "motion": "拖动滑块时数值同步变化；选择布局后，操作按钮移到对应位置。",
+    "buttons": [
+      {
+        "label": "音量滑块",
+        "effect": "拖动调整音量，数值随之更新"
+      },
+      {
+        "label": "声音图标",
+        "effect": "切换静音与有声状态"
+      },
+      {
+        "label": "布局选项",
+        "effect": "应用所选操作布局"
+      },
+      {
+        "label": "配色 / 动效",
+        "effect": "切换到对应设置页"
+      },
+      {
+        "label": "X",
+        "effect": "关闭设置，返回首页"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "settings-muted",
+    "title": "设置 · 静音",
+    "group": "home",
+    "entry": "设置 → 声音图标",
+    "description": "声音图标显示静音，音量读数变为“静音”。",
+    "actions": [
+      "声音图标",
+      "音量滑块",
+      "X"
+    ],
+    "state": "静音",
+    "image": "screens/settings-muted.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "主页",
+    "motion": "切换静音时更新声音图标和音量读数。",
+    "buttons": [
+      {
+        "label": "声音图标",
+        "effect": "开启声音；原音量为零时恢复到 100%"
+      },
+      {
+        "label": "音量滑块",
+        "effect": "调节音量；设为正值后开启声音"
+      },
+      {
+        "label": "X",
+        "effect": "关闭设置，返回首页"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "game-hud",
+    "title": "局内 HUD",
+    "group": "play",
+    "entry": "首页 → 开始游戏",
+    "description": "爱心表示剩余容错，分数显示在进度条右上方；左侧为投放次数，右侧为快捷道具。",
+    "actions": [
+      "左移 / 右移",
+      "慢落",
+      "旋转",
+      "下落",
+      "快捷道具",
+      "背包",
+      "暂停",
+      "问号"
+    ],
+    "state": "快捷栏铲子、换块、补给箱，暂存两种",
+    "image": "screens/game-hud.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "投放和消除时播放棋盘反馈，分数与道具次数随结算更新；背景像素粒子循环。",
+    "buttons": [
+      {
+        "label": "左移 / 右移",
+        "effect": "移动当前落块，按住可连续移动"
+      },
+      {
+        "label": "慢落",
+        "effect": "点按下降一格，按住加速下降"
+      },
+      {
+        "label": "旋转",
+        "effect": "顺时针旋转当前落块"
+      },
+      {
+        "label": "下落",
+        "effect": "立即投放当前落块"
+      },
+      {
+        "label": "快捷道具",
+        "effect": "使用所选道具，更新剩余次数"
+      },
+      {
+        "label": "背包",
+        "effect": "暂停对局，打开快捷栏与暂存列表"
+      },
+      {
+        "label": "暂停",
+        "effect": "暂停对局，打开道具图鉴"
+      },
+      {
+        "label": "问号",
+        "effect": "暂停对局，打开规则说明"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "backpack-reserve",
+    "title": "背包 · 快捷与暂存",
+    "group": "play",
+    "entry": "局内 → 背包",
+    "description": "快捷栏最多放三种道具，其余种类进入暂存区。每条道具显示数量和效果。",
+    "actions": [
+      "道具条目（拖动）",
+      "X"
+    ],
+    "state": "三种快捷道具，两种暂存道具",
+    "image": "screens/backpack-reserve.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "拖动整条道具时显示跟手副本，目标行高亮；松手完成排序。",
+    "buttons": [
+      {
+        "label": "道具条目（拖动）",
+        "effect": "在列表内排序，或拖到另一分区调整快捷栏"
+      },
+      {
+        "label": "X",
+        "effect": "关闭背包，恢复对局"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "pause-tools",
+    "title": "暂停 · 道具图鉴",
+    "group": "guide",
+    "entry": "局内 → 暂停",
+    "description": "暂停时可查看道具效果，上方播放演示，下方切换分类和物品。",
+    "actions": [
+      "道具图标",
+      "道具 / 特殊方块",
+      "重播",
+      "继续游戏 / X",
+      "返回主页"
+    ],
+    "state": "选中铲子，对局暂停",
+    "image": "screens/pause-tools.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "图鉴与规则",
+    "motion": "上方演示循环播放，道具切换重新开始；对局保持暂停。",
+    "buttons": [
+      {
+        "label": "道具图标",
+        "effect": "查看所选道具的效果并从头播放演示"
+      },
+      {
+        "label": "道具 / 特殊方块",
+        "effect": "切换图鉴分类"
+      },
+      {
+        "label": "重播",
+        "effect": "从头播放当前演示"
+      },
+      {
+        "label": "继续游戏 / X",
+        "effect": "关闭图鉴，恢复对局"
+      },
+      {
+        "label": "返回主页",
+        "effect": "打开退出确认"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "pause-special",
+    "title": "暂停 · 特殊方块",
+    "group": "guide",
+    "entry": "暂停 → 特殊方块",
+    "description": "查看特殊方块的落地效果和说明。",
+    "actions": [
+      "特殊方块图标",
+      "重播",
+      "继续游戏 / X",
+      "返回主页"
+    ],
+    "state": "选中爆炸方块",
+    "image": "screens/pause-special.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "图鉴与规则",
+    "motion": "特殊方块演示显示触发前后变化；重播重置演示。",
+    "buttons": [
+      {
+        "label": "特殊方块图标",
+        "effect": "查看所选方块的效果并从头播放演示"
+      },
+      {
+        "label": "重播",
+        "effect": "从头播放当前演示"
+      },
+      {
+        "label": "继续游戏 / X",
+        "effect": "关闭图鉴，恢复对局"
+      },
+      {
+        "label": "返回主页",
+        "effect": "打开退出确认"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "exit-confirm",
+    "title": "返回主页确认",
+    "group": "play",
+    "entry": "暂停 → 返回主页",
+    "description": "保存并退出可保留本局进度；结束本局会清除进度。",
+    "actions": [
+      "保存并退出",
+      "结束本局",
+      "X"
+    ],
+    "state": "对局暂停，退出确认打开",
+    "image": "screens/exit-confirm.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "确认窗以像素粒子揭开；取消后返回暂停图鉴。",
+    "buttons": [
+      {
+        "label": "保存并退出",
+        "effect": "保存本局进度并返回首页"
+      },
+      {
+        "label": "结束本局",
+        "effect": "清除本局进度并返回首页"
+      },
+      {
+        "label": "X",
+        "effect": "取消退出，回到暂停图鉴"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "rules",
+    "title": "规则说明",
+    "group": "guide",
+    "entry": "局内 → 右上角问号",
+    "description": "规则说明列出投放、消除、补给、商店和复活规则。",
+    "actions": [
+      "继续游戏"
+    ],
+    "state": "规则弹窗，对局暂停",
+    "image": "screens/rules.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "图鉴与规则",
+    "motion": "规则面板揭开显示；继续游戏后回到棋盘。",
+    "buttons": [
+      {
+        "label": "继续游戏",
+        "effect": "关闭规则说明，恢复对局"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "home-save",
+    "title": "首页 · 有存档",
+    "group": "home",
+    "entry": "暂停 → 返回主页 → 保存并退出",
+    "description": "首页显示“继续 V3”，可恢复保存的对局，也可重新开始。",
+    "actions": [
+      "继续 V3",
+      "放弃存档，重新开始",
+      "图鉴",
+      "设置"
+    ],
+    "state": "已有存档，显示“继续 V3”和已保存进度",
+    "image": "screens/home-save.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "主页",
+    "motion": "背景流光与像素微粒循环；点击“继续 V3”后播放入场过渡。",
+    "buttons": [
+      {
+        "label": "继续 V3",
+        "effect": "恢复存档，返回保存时的对局"
+      },
+      {
+        "label": "放弃存档，重新开始",
+        "effect": "清除存档并新开一局"
+      },
+      {
+        "label": "图鉴",
+        "effect": "打开能力图鉴，查看物品效果"
+      },
+      {
+        "label": "设置",
+        "effect": "打开音量、布局、配色和动效设置"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "backpack-empty",
+    "title": "背包 · 无暂存",
+    "group": "play",
+    "entry": "局内 → 背包",
+    "description": "当前只有铲子和换块，暂存区显示为空。",
+    "actions": [
+      "快捷道具条目（拖动）",
+      "X"
+    ],
+    "state": "默认铲子与换块，暂存为空",
+    "image": "screens/backpack-empty.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "拖动时道具副本跟随指针，目标位置高亮；松手更新顺序。",
+    "buttons": [
+      {
+        "label": "快捷道具条目（拖动）",
+        "effect": "调整快捷道具顺序"
+      },
+      {
+        "label": "X",
+        "effect": "关闭背包，恢复对局"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "backpack-drag",
+    "title": "背包 · 拖动轮换",
+    "group": "play",
+    "entry": "背包 → 拖动道具",
+    "description": "爆炸方块正从暂存区拖向快捷栏，松手后按目标位置重新排序。",
+    "actions": [
+      "拖动中的道具"
+    ],
+    "state": "爆炸方块从暂存区拖向快捷栏",
+    "image": "screens/backpack-drag.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "道具副本跟随指针，目标行高亮；松手后列表按新顺序排列。",
+    "buttons": [
+      {
+        "label": "拖动中的道具",
+        "effect": "移到目标位置，松手完成排序或跨区轮换"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "popup-close",
+    "title": "弹窗关闭 · 像素爆散",
+    "group": "play",
+    "entry": "背包 → 关闭 X",
+    "description": "点击背包的 X 后，面板以像素爆散方式关闭。动画结束后恢复对局。",
+    "actions": [],
+    "state": "背包关闭动画中",
+    "image": "screens/popup-close.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "像素从面板向外散开，弹窗消失后恢复局内输入。",
+    "buttons": [],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "clear-overflow",
+    "title": "通关 · 溢出金币",
+    "group": "rewards",
+    "entry": "达到通关分数",
+    "description": "通关后先将溢出分数兑换为金币，再结算通关金币。",
+    "actions": [],
+    "state": "溢出分数 25，正在结算溢出金币",
+    "image": "screens/clear-overflow.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "通关标题弹出，溢出金币从标题下飞向左上角钱包，到账后更新余额。",
+    "buttons": [],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "clear-base",
+    "title": "通关 · 默认金币",
+    "group": "rewards",
+    "entry": "溢出金币结算后",
+    "description": "溢出金币到账后，继续结算默认通关金币。全部金币到账后进入补给站。",
+    "actions": [],
+    "state": "默认通关金币 +5",
+    "image": "screens/clear-base.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "默认通关金币飞入左上角钱包并累加；结算完成后自动打开补给站。",
+    "buttons": [],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "shop-all",
+    "title": "商店 · 全部商品",
+    "group": "shop",
+    "entry": "补给站 → 商店",
+    "description": "商店列出道具和特殊方块，每张卡片显示价格；已拥有的物品额外显示数量。",
+    "actions": [
+      "商品卡片",
+      "全部 / 道具 / 特殊方块",
+      "返回补给"
+    ],
+    "state": "选中“全部”，展示两类商品",
+    "image": "screens/shop-all.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "商店",
+    "motion": "切换分类更新商品列表；点击卡片打开详情。",
+    "buttons": [
+      {
+        "label": "商品卡片",
+        "effect": "打开商品详情，查看效果和本次价格"
+      },
+      {
+        "label": "全部 / 道具 / 特殊方块",
+        "effect": "按分类筛选商品"
+      },
+      {
+        "label": "返回补给",
+        "effect": "关闭商店，回到当前补给站"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "shop-tools",
+    "title": "商店 · 道具分类",
+    "group": "shop",
+    "entry": "商店 → 道具",
+    "description": "道具分类列出普通道具，卡片显示价格和已拥有数量。",
+    "actions": [
+      "商品卡片",
+      "全部 / 道具 / 特殊方块",
+      "返回补给"
+    ],
+    "state": "选中“道具”，列表只显示普通道具",
+    "image": "screens/shop-tools.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "商店",
+    "motion": "点击分类后更新选中样式和商品列表；点击卡片打开详情。",
+    "buttons": [
+      {
+        "label": "商品卡片",
+        "effect": "打开商品详情，查看效果和本次价格"
+      },
+      {
+        "label": "全部 / 道具 / 特殊方块",
+        "effect": "按分类筛选商品"
+      },
+      {
+        "label": "返回补给",
+        "effect": "关闭商店，回到当前补给站"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "shop-detail",
+    "title": "商店 · 商品详情",
+    "group": "shop",
+    "entry": "商店 → 点击商品",
+    "description": "详情显示物品效果、本次价格和持有金币。",
+    "actions": [
+      "购买",
+      "X"
+    ],
+    "state": "普通道具商品详情",
+    "image": "screens/shop-detail.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "商店",
+    "motion": "购买成功后关闭详情，数量与下次价格更新。",
+    "buttons": [
+      {
+        "label": "购买",
+        "effect": "扣除金币，物品数量增加，关闭详情并更新商品价格"
+      },
+      {
+        "label": "X",
+        "effect": "关闭详情，回到商品列表"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "shop-special",
+    "title": "商店 · 特殊方块分类",
+    "group": "shop",
+    "entry": "商店 → 特殊方块",
+    "description": "特殊方块分类可查看并购买改造落块的道具。同类商品再次购买时价格增长。",
+    "actions": [
+      "商品卡片",
+      "全部 / 道具 / 特殊方块",
+      "返回补给"
+    ],
+    "state": "选中“特殊方块”，列表只显示特殊方块",
+    "image": "screens/shop-special.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "商店",
+    "motion": "点击分类后更新选中样式和商品列表；上下滑动可查看其余商品。",
+    "buttons": [
+      {
+        "label": "商品卡片",
+        "effect": "打开商品详情，查看效果和本次价格"
+      },
+      {
+        "label": "全部 / 道具 / 特殊方块",
+        "effect": "按分类筛选商品"
+      },
+      {
+        "label": "返回补给",
+        "effect": "关闭商店，回到当前补给站"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "shop-insufficient",
+    "title": "商店 · 金币不足",
+    "group": "shop",
+    "entry": "商店 → 点击商品",
+    "description": "详情显示物品效果和价格，购买按钮变为“金币不足”。",
+    "actions": [
+      "金币不足（停用）",
+      "X"
+    ],
+    "state": "余额为零，“金币不足”按钮停用",
+    "image": "screens/shop-insufficient.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "商店",
+    "motion": "打开详情时显示弹窗；金币不足状态下保留效果和价格说明。",
+    "buttons": [
+      {
+        "label": "金币不足（停用）",
+        "effect": "余额不足，无法购买"
+      },
+      {
+        "label": "X",
+        "effect": "关闭详情，回到商品列表"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "supply",
+    "title": "补给站 · 三选一",
+    "group": "rewards",
+    "entry": "通关金币结算后",
+    "description": "从三张卡片中领取一件补给，领取后留在本页，可继续逛商店。",
+    "actions": [
+      "领取一件",
+      "免费刷新",
+      "进入商店"
+    ],
+    "state": "免费刷新一次，广告刷新三次",
+    "image": "screens/supply.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "领取后选中卡片高亮，其余卡片停用，底部刷新按钮切换为绿色下一关。",
+    "buttons": [
+      {
+        "label": "领取一件",
+        "effect": "领取这张卡片的补给，留在本页"
+      },
+      {
+        "label": "免费刷新",
+        "effect": "消耗一次免费次数，更换三张补给卡片"
+      },
+      {
+        "label": "进入商店",
+        "effect": "打开商店，返回后保留当前领取状态"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "supply-ad",
+    "title": "补给站 · 广告刷新",
+    "group": "rewards",
+    "entry": "补给站 → 免费刷新",
+    "description": "免费次数用完后显示广告刷新入口。",
+    "actions": [
+      "看广告刷新",
+      "领取一件",
+      "进入商店"
+    ],
+    "state": "免费刷新已用完，广告剩余三次",
+    "image": "screens/supply-ad.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "刷新重新生成三张补给卡片，次数同步更新。",
+    "buttons": [
+      {
+        "label": "看广告刷新",
+        "effect": "广告完成后更换三张补给卡片"
+      },
+      {
+        "label": "领取一件",
+        "effect": "领取这张卡片的补给，留在本页"
+      },
+      {
+        "label": "进入商店",
+        "effect": "打开商店，返回后保留当前领取状态"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "supply-ad-playing",
+    "title": "补给站 · 广告播放中",
+    "group": "rewards",
+    "entry": "补给站 → 看广告刷新",
+    "description": "广告播放期间，奖励选择和刷新暂时停用。",
+    "actions": [],
+    "state": "广告播放中",
+    "image": "screens/supply-ad-playing.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "广告播放中按钮停用，完成后刷新三件补给。",
+    "buttons": [],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "supply-claimed",
+    "title": "补给站 · 已领取",
+    "group": "rewards",
+    "entry": "补给站 → 领取一件",
+    "description": "补给已放入背包。点击绿色“下一关”继续，也可先进入商店。",
+    "actions": [
+      "下一关",
+      "进入商店"
+    ],
+    "state": "已领取一件补给，等待进入下一关",
+    "image": "screens/supply-claimed.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "通关与补给",
+    "motion": "点击下一关才播放过渡并继续对局；从商店返回仍保留已领取状态。",
+    "buttons": [
+      {
+        "label": "下一关",
+        "effect": "离开补给站，进入下一关"
+      },
+      {
+        "label": "进入商店",
+        "effect": "打开商店，返回后保留当前领取状态"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "codex-heavy",
+    "title": "图鉴 · 超重方块",
+    "group": "guide",
+    "entry": "首页 → 图鉴 → 超重方块",
+    "description": "超重方块落地后，按当时同色格数量提高这些格子的消除倍率。",
+    "actions": [
+      "道具 / 特殊方块",
+      "物品图标",
+      "重播",
+      "X"
+    ],
+    "state": "选中超重方块，新机制说明与效果演示",
+    "image": "screens/codex-heavy.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局外",
+    "motion": "图鉴演示展示超重方块的新落地效果；点击重播可从头查看。",
+    "buttons": [
+      {
+        "label": "道具 / 特殊方块",
+        "effect": "切换图鉴分类"
+      },
+      {
+        "label": "物品图标",
+        "effect": "查看所选物品的效果和演示"
+      },
+      {
+        "label": "重播",
+        "effect": "从头播放当前演示"
+      },
+      {
+        "label": "X",
+        "effect": "关闭图鉴，返回主页"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "failure",
+    "title": "失败 · 广告复活",
+    "group": "recovery",
+    "entry": "投放次数耗尽且未达目标",
+    "description": "本局未达目标，可看广告复活，也可重新开始。",
+    "actions": [
+      "看广告复活",
+      "再玩一局"
+    ],
+    "state": "未达到阶段目标",
+    "image": "screens/failure.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "失败与复活",
+    "motion": "失败面板出现，显示本局结果和复活入口。",
+    "buttons": [
+      {
+        "label": "看广告复活",
+        "effect": "播放复活广告，完成后增加十次投放并补满虚线内空格"
+      },
+      {
+        "label": "再玩一局",
+        "effect": "结束当前对局并重新开局"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "revive-ad",
+    "title": "复活 · 广告播放中",
+    "group": "recovery",
+    "entry": "失败 → 看广告复活",
+    "description": "正在播放复活广告。结束后增加十次投放，补满虚线内空格并恢复本局。",
+    "actions": [],
+    "state": "广告播放中，复活和重开按钮停用",
+    "image": "screens/revive-ad.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "失败与复活",
+    "motion": "广告结束后关闭失败面板，补满虚线内空格并播放消除结算。",
+    "buttons": [],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "revived",
+    "title": "复活 · 返回对局",
+    "group": "recovery",
+    "entry": "复活广告结束",
+    "description": "复活后继续当前关卡，新增投放次数已显示在目标区。",
+    "actions": [
+      "左移 / 右移",
+      "慢落",
+      "旋转",
+      "下落",
+      "快捷道具",
+      "背包",
+      "暂停",
+      "问号"
+    ],
+    "state": "复活完成，恢复局内操作",
+    "image": "screens/revived.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "失败与复活",
+    "motion": "虚线内空格补满后播放消除结算，随后恢复投放。",
+    "buttons": [
+      {
+        "label": "左移 / 右移",
+        "effect": "移动当前落块，按住可连续移动"
+      },
+      {
+        "label": "慢落",
+        "effect": "点按下降一格，按住加速下降"
+      },
+      {
+        "label": "旋转",
+        "effect": "顺时针旋转当前落块"
+      },
+      {
+        "label": "下落",
+        "effect": "立即投放当前落块"
+      },
+      {
+        "label": "快捷道具",
+        "effect": "使用所选道具，更新剩余次数"
+      },
+      {
+        "label": "背包",
+        "effect": "暂停对局，打开快捷栏与暂存列表"
+      },
+      {
+        "label": "暂停",
+        "effect": "暂停对局，打开道具图鉴"
+      },
+      {
+        "label": "问号",
+        "effect": "暂停对局，打开规则说明"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  }
+]

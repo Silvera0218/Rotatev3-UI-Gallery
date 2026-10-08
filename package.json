@@ -1,0 +1,18 @@
+{
+  "name": "rotatev3-ui-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "python -m http.server 5190 --bind 127.0.0.1",
+    "test": "node tests/gallery.cjs"
+  },
+  "dependencies": {
+    "apple-liquid-glass-webgl": "^2.6.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright": "^1.64.0"
+  }
+}

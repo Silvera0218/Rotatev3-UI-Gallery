@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T09:49:45.912341+00:00",
+  "title": "Design System: ROTATION V3 UI Gallery",
+  "extensions": {
+    "colorMeta": {
+      "action-blue": {
+        "role": "primary",
+        "displayName": "action-blue",
+        "canonical": "#165ec9",
+        "tonalRamp": [
+          "oklch(15% 0.15 255)",
+          "oklch(26% 0.15 255)",
+          "oklch(38% 0.15 255)",
+          "oklch(49% 0.15 255)",
+          "oklch(61% 0.15 255)",
+          "oklch(72% 0.15 255)",
+          "oklch(84% 0.15 255)",
+          "oklch(95% 0.15 255)"
+        ]
+      },
+      "selected-blue": {
+        "role": "primary",
+        "displayName": "selected-blue",
+        "canonical": "#104fae",
+        "tonalRamp": [
+          "oklch(15% 0.15 255)",
+          "oklch(26% 0.15 255)",
+          "oklch(38% 0.15 255)",
+          "oklch(49% 0.15 255)",
+          "oklch(61% 0.15 255)",
+          "oklch(72% 0.15 255)",
+          "oklch(84% 0.15 255)",
+          "oklch(95% 0.15 255)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "ink",
+        "canonical": "#213449",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "muted-ink",
+        "canonical": "#52657b",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "canvas",
+        "canonical": "#f2f5f9",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "surface",
+        "canonical": "#f8fafc",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "white",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "nav-cool": {
+        "role": "neutral",
+        "displayName": "nav-cool",
+        "canonical": "#e7eff8",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "nav-light": {
+        "role": "neutral",
+        "displayName": "nav-light",
+        "canonical": "#f5f7fa",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "nav-end": {
+        "role": "neutral",
+        "displayName": "nav-end",
+        "canonical": "#e7eff4",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "image-ground": {
+        "role": "neutral",
+        "displayName": "image-ground",
+        "canonical": "#d7eaf6",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "control-border",
+        "canonical": "#c9d6e5",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "divider",
+        "canonical": "#dce5ee",
+        "tonalRamp": [
+          "oklch(15% 0.025 255)",
+          "oklch(26% 0.025 255)",
+          "oklch(38% 0.025 255)",
+          "oklch(49% 0.025 255)",
+          "oklch(61% 0.025 255)",
+          "oklch(72% 0.025 255)",
+          "oklch(84% 0.025 255)",
+          "oklch(95% 0.025 255)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "heading": {
+        "displayName": "heading",
+        "purpose": "章节和查看器标题"
+      },
+      "card-title": {
+        "displayName": "card-title",
+        "purpose": "截图标题"
+      },
+      "body": {
+        "displayName": "body",
+        "purpose": "交互说明"
+      },
+      "caption": {
+        "displayName": "caption",
+        "purpose": "卡片摘要"
+      },
+      "label": {
+        "displayName": "label",
+        "purpose": "说明分节标题"
+      },
+      "nav": {
+        "displayName": "nav",
+        "purpose": "分类按钮"
+      }
+    },
+    "shadows": [
+      {
+        "name": "navigation-shell",
+        "value": "0 4px 16px #314c7110",
+        "purpose": "分类栏外框"
+      },
+      {
+        "name": "selection-fallback",
+        "value": "0 2px 8px #244d7620",
+        "purpose": "CSS 选中面"
+      },
+      {
+        "name": "image-rest",
+        "value": "0 5px 16px #21344910",
+        "purpose": "截图常态"
+      },
+      {
+        "name": "image-hover",
+        "value": "0 10px 24px #21344920",
+        "purpose": "截图悬停"
+      },
+      {
+        "name": "viewer",
+        "value": "0 24px 90px #14274445",
+        "purpose": "查看器浮层"
+      }
+    ],
+    "motion": [
+      {
+        "name": "image-hover",
+        "value": "box-shadow .18s, transform .18s",
+        "purpose": "图框悬停时上移 3px；减少动效时取消过渡"
+      },
+      {
+        "name": "selection-travel",
+        "value": "230ms; ease = 1 - (1 - t)^3",
+        "purpose": "在分类按钮间移动并调整玻璃选中面的尺寸"
+      },
+      {
+        "name": "glass-material",
+        "value": "refraction .025; dispersion .015; frost .02; body .2; tint .08; roundness 15",
+        "purpose": "分类导航玻璃；采用静态背景取样"
+      },
+      {
+        "name": "viewer-backdrop",
+        "value": "background:#0c213970; backdrop-filter:blur(8px)",
+        "purpose": "打开查看器时降低背景干扰"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "wide-grid",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "分类按钮",
+      "kind": "nav",
+      "refersTo": "filter",
+      "description": "分类栏中的默认按钮。",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"false\">局内操作</button>",
+      "css": ".ds-filter{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Microsoft YaHei\",sans-serif;line-height:1.6;cursor:pointer;border:0;background:transparent;color:#4b6178;border-radius:15px;padding:10px 22px;min-height:44px;font-size:14px;white-space:nowrap}.ds-filter:focus-visible{outline:3px solid #165ec9;outline-offset:4px}"
+    },
+    {
+      "name": "当前分类",
+      "kind": "nav",
+      "refersTo": "filter-selected",
+      "description": "WebGL 不可用时的选中面。",
+      "html": "<button class=\"ds-selected\" aria-pressed=\"true\">全部界面</button>",
+      "css": ".ds-selected{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Microsoft YaHei\",sans-serif;line-height:1.6;cursor:pointer;border:0;background:#fff;color:#104fae;border-radius:15px;padding:10px 22px;min-height:44px;font-size:14px;font-weight:650;box-shadow:0 2px 8px #244d7620}.ds-selected:focus-visible{outline:3px solid #165ec9;outline-offset:4px}"
+    },
+    {
+      "name": "查看器翻页",
+      "kind": "button",
+      "refersTo": "viewer-action",
+      "description": "上一张与下一张使用同一按钮样式。",
+      "html": "<button class=\"ds-action\">下一张<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m9 6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-action{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Microsoft YaHei\",sans-serif;line-height:1.6;cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #c9d6e5;border-radius:12px;color:#165ec9;background:#fff}.ds-action svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-action:disabled{cursor:default;opacity:.4}.ds-action:focus-visible{outline:3px solid #165ec9;outline-offset:4px}"
+    },
+    {
+      "name": "关闭查看器",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "圆形关闭按钮及 SVG 图标。",
+      "html": "<button class=\"ds-close\" aria-label=\"关闭截图\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button>",
+      "css": ".ds-close{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Microsoft YaHei\",sans-serif;line-height:1.6;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;border:1px solid #c9d6e5;border-radius:50%;background:#fff;color:#36506c}.ds-close svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-close:focus-visible{outline:3px solid #165ec9;outline-offset:4px}"
+    },
+    {
+      "name": "截图卡片",
+      "kind": "card",
+      "refersTo": "screen-card",
+      "description": "示例显示图框、标题与摘要；实页图框内使用原始截图。",
+      "html": "<button class=\"ds-card\"><span class=\"ds-frame\" aria-label=\"实机截图位置\"></span><span class=\"ds-title\">首页 · 新游戏</span><span class=\"ds-description\">首页提供开始游戏、图鉴和设置入口。</span></button>",
+      "css": ".ds-card{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Microsoft YaHei\",sans-serif;line-height:1.6;cursor:pointer;display:block;text-align:left;border:0;padding:0;color:#213449;background:transparent;border-radius:14px;width:220px;align-self:start}.ds-frame{display:block;aspect-ratio:390/844;overflow:hidden;border-radius:14px;background:#d7eaf6;border:1px solid #cedded;box-shadow:0 5px 16px #21344910;transition:box-shadow .18s,transform .18s}.ds-card:hover .ds-frame{transform:translateY(-3px);box-shadow:0 10px 24px #21344920}.ds-title{display:block;font-size:16px;font-weight:650;margin-top:13px}.ds-description{display:block;color:#52657b;font-size:13px;margin-top:5px;line-height:1.7}.ds-card:focus-visible{outline:3px solid #165ec9;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-frame{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "实机截图索引",
+    "overview": "沿用已确认的 V2 图集视觉：冷浅底色、蓝色控件和完整实机截图。页面服务于美术与交互交接，阅读顺序是筛选类别、查看截图、展开入口与操作说明。\n\n图集使用紧凑的系统字体和可横向滚动的分类栏。截图承担主要视觉内容，动效集中在分类选中面和截图悬停；查看器将截图与说明并排，窄屏改为上下排列。",
+    "keyCharacteristics": [
+      "实机截图保持完整比例。",
+      "导航选中状态使用一块移动玻璃面。",
+      "标题紧凑，说明按入口、操作、状态和动效分节。",
+      "桌面并排阅读，移动端单区滚动。"
+    ],
+    "rules": [
+      {
+        "name": "The Screenshot Rule",
+        "body": "保留原图比例和完整画面，用边框与背景区分截图和图集。",
+        "section": "colors"
+      },
+      {
+        "name": "The Read Mode Rule",
+        "body": "使用现有系统字体与紧凑标题层级，让截图和操作说明占据主要阅读空间。",
+        "section": "typography"
+      },
+      {
+        "name": "The Selection Rule",
+        "body": "玻璃材质用于分类选中面；选中信息始终由 HTML 按钮、文字颜色和 aria-pressed 表达。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 使用真实截图，并保持截图的完整比例。",
+      "Do 为按钮和链接保留可见焦点，为分类保留横向滚动。",
+      "Do 将入口、操作、状态和动效说明与对应截图放在同一查看器内。",
+      "Do 在减少动效、减少透明度和强制颜色模式下保留清晰的选中反馈。"
+    ],
+    "donts": [
+      "Don’t 裁切截图以强行填满卡片。",
+      "Don’t 用营销大标题取代紧凑的阅读页标题。",
+      "Don’t 把 WebGL 画布作为按钮或文字的唯一承载层。",
+      "Don’t 把每张卡片的分类重复写成眉题。"
+    ]
+  }
+}

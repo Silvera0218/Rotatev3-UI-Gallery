@@ -225,44 +225,11 @@
     }
   },
   {
-    "id": "backpack-reserve",
-    "title": "背包 · 快捷与暂存",
-    "group": "play",
-    "entry": "局内 → 背包",
-    "description": "快捷栏最多放三种道具，其余种类进入暂存区。每条道具显示数量和效果。",
-    "actions": [
-      "道具条目（拖动）",
-      "X"
-    ],
-    "state": "三种快捷道具，两种暂存道具",
-    "image": "screens/backpack-reserve.png",
-    "width": 390,
-    "height": 844,
-    "groupLabel": "局内操作",
-    "motion": "拖动整条道具时显示跟手副本，目标行高亮；松手完成排序。",
-    "buttons": [
-      {
-        "label": "道具条目（拖动）",
-        "effect": "在列表内排序，或拖到另一分区调整快捷栏"
-      },
-      {
-        "label": "X",
-        "effect": "关闭背包，恢复对局"
-      }
-    ],
-    "capture": {
-      "source": "V3 本地实机",
-      "viewport": "390 × 844",
-      "pixelRatio": 2,
-      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
-    }
-  },
-  {
     "id": "pause-tools",
-    "title": "暂停 · 道具图鉴",
-    "group": "guide",
+    "title": "暂停主界面",
+    "group": "play",
     "entry": "局内 → 暂停",
-    "description": "暂停时可查看道具效果，上方播放演示，下方切换分类和物品。",
+    "description": "点击局内暂停按钮进入。上方查看道具演示和效果，下方选择物品、继续游戏或返回主页。",
     "actions": [
       "道具图标",
       "道具 / 特殊方块",
@@ -274,7 +241,7 @@
     "image": "screens/pause-tools.png",
     "width": 390,
     "height": 844,
-    "groupLabel": "图鉴与规则",
+    "groupLabel": "局内操作",
     "motion": "上方演示循环播放，道具切换重新开始；对局保持暂停。",
     "buttons": [
       {
@@ -307,8 +274,8 @@
   },
   {
     "id": "pause-special",
-    "title": "暂停 · 特殊方块",
-    "group": "guide",
+    "title": "暂停 · 特殊方块分页",
+    "group": "play",
     "entry": "暂停 → 特殊方块",
     "description": "查看特殊方块的落地效果和说明。",
     "actions": [
@@ -321,7 +288,7 @@
     "image": "screens/pause-special.png",
     "width": 390,
     "height": 844,
-    "groupLabel": "图鉴与规则",
+    "groupLabel": "局内操作",
     "motion": "特殊方块演示显示触发前后变化；重播重置演示。",
     "buttons": [
       {
@@ -377,6 +344,39 @@
       {
         "label": "X",
         "effect": "取消退出，回到暂停图鉴"
+      }
+    ],
+    "capture": {
+      "source": "V3 本地实机",
+      "viewport": "390 × 844",
+      "pixelRatio": 2,
+      "data": "独立浏览器 QA 测试状态，未读取玩家存档"
+    }
+  },
+  {
+    "id": "backpack-reserve",
+    "title": "背包 · 快捷与暂存",
+    "group": "play",
+    "entry": "局内 → 背包",
+    "description": "快捷栏最多放三种道具，其余种类进入暂存区。每条道具显示数量和效果。",
+    "actions": [
+      "道具条目（拖动）",
+      "X"
+    ],
+    "state": "三种快捷道具，两种暂存道具",
+    "image": "screens/backpack-reserve.png",
+    "width": 390,
+    "height": 844,
+    "groupLabel": "局内操作",
+    "motion": "拖动整条道具时显示跟手副本，目标行高亮；松手完成排序。",
+    "buttons": [
+      {
+        "label": "道具条目（拖动）",
+        "effect": "在列表内排序，或拖到另一分区调整快捷栏"
+      },
+      {
+        "label": "X",
+        "effect": "关闭背包，恢复对局"
       }
     ],
     "capture": {
